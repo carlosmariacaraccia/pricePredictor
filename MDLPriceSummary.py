@@ -5,10 +5,10 @@ from datetime import timedelta
 from turicreate import SFrameBuilder
 
 
-class MercadoDeLiniersPricesSummary:
+class MDLPriceSummary:
 
     @staticmethod
-    def data_sframe_for_dates(initial_date: date, ending_date: date, path_to_save: str):
+    def sframe_of_novillito_data_for(initial_date: date, ending_date: date):
 
         # get the driver of the web page
         driver = MercadoDeLiniersNavigator.go_to_initial_resumen_de_precios()
