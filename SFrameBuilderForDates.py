@@ -32,5 +32,4 @@ class MercadoDeLiniersPricesSummary:
 
         # once the loop has finished close the sframe and save it to a path
         resulting_sframe = sframe_to_be_built.close()
-
-        resulting_sframe.save(path=path_to_save)
+        return resulting_sframe
